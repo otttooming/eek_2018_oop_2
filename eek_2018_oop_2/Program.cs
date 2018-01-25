@@ -35,6 +35,21 @@ namespace eek_2018_oop_2
 
             Console.WriteLine("Boss pay: {0}", bossPay);
 
+            /*
+                Setting properties
+            */
+            Console.WriteLine();
+
+            Worker NotBossAnymore = new Worker(Boss);
+
+            NotBossAnymore.SaveJob("Janitor Emporium Inc");
+            NotBossAnymore.pay = 1000;
+            NotBossAnymore.Position = "Regular Joe";
+
+            NotBossAnymore.PrintMe();
+
+            Console.WriteLine();
+
             Console.Read();
         }
     }

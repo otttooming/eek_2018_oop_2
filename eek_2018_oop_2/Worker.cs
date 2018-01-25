@@ -4,8 +4,16 @@ namespace eek_2018_oop_2
     class Worker : Person
     {
         protected string job;
-        protected double pay;
+        public double pay { get; set; } // NEW. Getting properties
         protected string position;
+        public string Position // LEGACY. Getting properties.
+        {
+            get { return position; }
+            set { position = value; }
+        }
+
+        public string ReturnJob() { return job; }
+        public void SaveJob(string newJob) { job = newJob; }
 
         public Worker(char gender = 'x', string name = "---", int dateOfBirth = 0,
                       string job = "---", double pay = 0, string position = "---")
