@@ -67,6 +67,10 @@ namespace eek_2018_oop_2
 
             Console.WriteLine();
 
+            Geek.year = 2018;
+
+            Geek.PrintMe();
+
             Console.Read();
         }
     }

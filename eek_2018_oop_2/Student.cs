@@ -3,9 +3,9 @@ namespace eek_2018_oop_2
 {
     class Student : Person
     {
-        public string course;
-        public int year;
-        public string university;
+        protected string course;
+        public int year { get; set; }
+        protected string university;
 
         public Student(char gender = 'x', string name = "---", int dateOfBirth = 0,
                       string course = "---", int year = 0, string university = "---")
@@ -27,7 +27,7 @@ namespace eek_2018_oop_2
         public override void PrintMe()
         {
             base.PrintMe();
-            Console.Write("{0,-12} {1,7:f2} {2,-12}", course, year, university);
+            Console.Write(" {0,-12} {1,7} {2,-12}", course, year, university);
         }
     }
 }
