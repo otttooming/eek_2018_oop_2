@@ -37,7 +37,7 @@ namespace eek_2018_oop_2
         public override void PrintMe()
         {
             base.PrintMe();
-            Console.Write(" {0,-12} {1,7} {2,-12} {1}", course, Year, university, Stipendium);
+            Console.Write(" {0,-12} {1,7} {2,-12} {3,7:f2}", course, Year, university, Stipendium);
         }
 
         public override double CalculateIncome(double taxFree, double incomeTax) {
