@@ -56,6 +56,17 @@ namespace eek_2018_oop_2
             double socialSecurityTax = 33;
             NotBossAnymore.CalculatePayRoll(socialSecurityTax);
 
+            /*
+                Create student
+            */
+            Console.WriteLine();
+
+            Student Geek = new Student('M', "Jhonny Appleseed", 1992, "History", 2017, "Caltec");
+
+            Geek.PrintMe();
+
+            Console.WriteLine();
+
             Console.Read();
         }
     }

@@ -37,6 +37,7 @@
     <Compile Include="FirstInterface.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Worker.cs" />
+    <Compile Include="Student.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
