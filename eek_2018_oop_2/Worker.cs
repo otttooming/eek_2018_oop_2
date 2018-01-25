@@ -53,5 +53,10 @@ namespace eek_2018_oop_2
         {
             return (1 + socialSecurityTax / 100) * pay;
         }
+
+        public override double CalculateIncome(double taxFree, double incomeTax)
+        {
+            return CalculateNetPay(taxFree, incomeTax);
+        }
     }
 }

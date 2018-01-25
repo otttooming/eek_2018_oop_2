@@ -61,13 +61,13 @@ namespace eek_2018_oop_2
             */
             Console.WriteLine();
 
-            Student Geek = new Student('M', "Jhonny Appleseed", 1992, "History", 2017, "Caltec");
+            Student Geek = new Student('M', "Jhonny Appleseed", 1992, "History", 2017, "Caltec", 345);
 
             Geek.PrintMe();
 
             Console.WriteLine();
 
-            Geek.year = 2018;
+            Geek.Year = 2018;
 
             Geek.ChangeCourse("Media");
             Geek.PrintMe();

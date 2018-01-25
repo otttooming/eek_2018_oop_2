@@ -36,5 +36,7 @@ namespace eek_2018_oop_2
 
             return age;
         }
+
+        public virtual double CalculateIncome(double taxFree, double incomeTax) { return 0; }
     }
 }
