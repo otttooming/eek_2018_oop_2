@@ -69,6 +69,7 @@ namespace eek_2018_oop_2
 
             Geek.year = 2018;
 
+            Geek.ChangeCourse("Media");
             Geek.PrintMe();
 
             Console.Read();

@@ -7,6 +7,13 @@ namespace eek_2018_oop_2
         public int year { get; set; }
         protected string university;
 
+        /*
+            Change course by NOT using {get; set;} method
+        */
+        public void ChangeCourse(string newCourse) {
+            this.course = newCourse;
+        }
+
         public Student(char gender = 'x', string name = "---", int dateOfBirth = 0,
                       string course = "---", int year = 0, string university = "---")
             :base(gender, name, dateOfBirth)
