@@ -48,5 +48,10 @@ namespace eek_2018_oop_2
 
             return pay - subtracked;
         }
+
+        internal double CalculatePayRoll(double socialSecurityTax)
+        {
+            return (1 + socialSecurityTax / 100) * pay;
+        }
     }
 }

@@ -50,6 +50,12 @@ namespace eek_2018_oop_2
 
             Console.WriteLine();
 
+            /*
+                Calculate pay
+            */
+            double socialSecurityTax = 33;
+            NotBossAnymore.CalculatePayRoll(socialSecurityTax);
+
             Console.Read();
         }
     }
