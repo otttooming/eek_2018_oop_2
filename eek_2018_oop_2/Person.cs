@@ -24,7 +24,7 @@ namespace eek_2018_oop_2
             this.gender = ob.gender;
         }
 
-        public void PrintMe()
+        public virtual void PrintMe()
         {
             Console.Write("{0,-12} {1} {2,4}", name, gender, dateOfBirth);
         }

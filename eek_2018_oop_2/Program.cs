@@ -18,6 +18,23 @@ namespace eek_2018_oop_2
             Person PasserBy = new Person('F');
             PasserBy.PrintMe();
 
+            /*
+                Workers section
+            */
+
+            Console.WriteLine();
+
+            Worker Boss = new Worker('M', "Rocket Jesus", 1987, "Space", 1911, "CEO");
+            Boss.PrintMe();
+
+            Console.WriteLine();
+            double taxFree = 500;
+            double incomeTax = 20;
+
+            double bossPay = Boss.CalculateNetPay(taxFree, incomeTax);
+
+            Console.WriteLine("Boss pay: {0}", bossPay);
+
             Console.Read();
         }
     }
